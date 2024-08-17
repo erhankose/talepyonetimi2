@@ -1,4 +1,4 @@
-/*Erhan Köse */
+/*Erhan Köse 2*/
 package com.erhankose.talep_yonetimi.entity;
 
 import jakarta.persistence.*;
