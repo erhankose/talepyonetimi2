@@ -9,8 +9,8 @@ import jakarta.persistence.ManyToOne;
 public class ProjeDto {
 
     private Long id;
-    private String proje_ad;
-    private String proje_kodu;
+    private String pad;
+    private String pkodu;
 
     public Long getId() {
         return id;
@@ -20,19 +20,19 @@ public class ProjeDto {
         this.id = id;
     }
 
-    public String getProje_ad() {
-        return proje_ad;
+    public String getPad() {
+        return pad;
     }
 
-    public void setProje_ad(String proje_ad) {
-        this.proje_ad = proje_ad;
+    public void setPad(String pad) {
+        this.pad = pad;
     }
 
-    public String getProje_kodu() {
-        return proje_kodu;
+    public String getPkodu() {
+        return pkodu;
     }
 
-    public void setProje_kodu(String proje_kodu) {
-        this.proje_kodu = proje_kodu;
+    public void setPkodu(String pkodu) {
+        this.pkodu = pkodu;
     }
 }

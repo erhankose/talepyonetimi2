@@ -1,5 +1,8 @@
 package com.erhankose.talep_yonetimi.servis.impl;
 
+import com.erhankose.talep_yonetimi.dto.ProjeDto;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import org.modelmapper.ModelMapper;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
@@ -15,11 +18,12 @@ import java.util.Optional;
 public class ProjeServisImpl implements ProjeServis {
 
     public final ProjeRepository projeRepository;
+    private final ModelMapper modelMapper;
 
     //Spring setter inject. yerine  constr.inject. best praktis
-    public ProjeServisImpl(ProjeRepository projeRepository) {
+    public ProjeServisImpl(ProjeRepository projeRepository,ModelMapper modelMapper) {
         this.projeRepository =projeRepository;
-        projeRepository.getBypkodu("1");
+        this.modelMapper = modelMapper;
 
     }
 
@@ -32,8 +36,10 @@ public class ProjeServisImpl implements ProjeServis {
     }
 
     @Override
-    public Optional<Proje> getById(Long id) {
-        return projeRepository.findById(id);
+    public  ProjeDto getById(Long id) {
+
+        Proje proje = projeRepository.getById(id);
+        return  modelMapper.map(proje,ProjeDto.class);
     }
 
     @Override

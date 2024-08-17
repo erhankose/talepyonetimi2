@@ -18,41 +18,11 @@ public class Proje extends BaseEntity{
 
     @Column(name="proje_ad",unique = true)
     private String pad;
-    @Column(name="pkodu",unique = true)
+    @Column(name="proje_kodu",unique = true)
     private String pkodu;
     @JoinColumn(name="manager_user_id")
     @ManyToOne(optional = true,fetch = FetchType.LAZY)
     private  User yonetici;
 
-    public Long getId() {
-        return id;
-    }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getPad() {
-        return pad;
-    }
-
-    public void setPad(String pad) {
-        this.pad = pad;
-    }
-
-    public String getPkodu() {
-        return pkodu;
-    }
-
-    public void setPkodu(String pkodu) {
-        this.pkodu = pkodu;
-    }
-
-    public User getYonetici() {
-        return yonetici;
-    }
-
-    public void setYonetici(User yonetici) {
-        this.yonetici = yonetici;
-    }
 }
