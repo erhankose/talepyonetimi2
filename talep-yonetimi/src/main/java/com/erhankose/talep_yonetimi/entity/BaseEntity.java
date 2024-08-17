@@ -1,3 +1,4 @@
+/*Erhan Köse 3*/
 package com.erhankose.talep_yonetimi.entity;
 
 import jakarta.persistence.Column;
