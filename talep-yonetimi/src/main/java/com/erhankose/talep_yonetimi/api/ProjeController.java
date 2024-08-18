@@ -45,7 +45,7 @@ public class ProjeController {
         return  ResponseEntity.ok(projeDto);
     }
 
-    //Erhan Köse 2
+    //Erhan Köse 3
     @PostMapping()
     public ResponseEntity<ProjeDto> createProje(@RequestBody ProjeDto projeDto) {
 
