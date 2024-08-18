@@ -44,4 +44,12 @@ public class ProjeController {
         //ResponseEntity<ProjeDto> projeDtoResponseEntity= ResponseEntity.ok(projeDto);
         return  ResponseEntity.ok(projeDto);
     }
+
+    @PostMapping()
+    public ResponseEntity<ProjeDto> createProje(@RequestBody ProjeDto projeDto) {
+
+        projeDto = projeServisImpl.save(projeDto);
+
+        return ResponseEntity.ok(projeDto);
+    }
 }

@@ -12,8 +12,6 @@ import com.erhankose.talep_yonetimi.repository.ProjeRepository;
 import com.erhankose.talep_yonetimi.servis.ProjeServis;
 import org.springframework.stereotype.Service;
 
-import java.util.Optional;
-
 @Service
 public class ProjeServisImpl implements ProjeServis {
 
@@ -28,11 +26,24 @@ public class ProjeServisImpl implements ProjeServis {
     }
 
     @Override
-    public Proje save(Proje proje) {
-        if (proje.getPad()==null) {
+    public ProjeDto save(ProjeDto projeDto) {
+
+        if (projeDto.getPad()==null) {
             throw  new IllegalArgumentException("Proje kodu boş olamaz");
         }
-        return projeRepository.save(proje);
+
+        Proje projeKontrol = projeRepository.getBypkodu(projeDto.getPkodu());
+
+        if (projeKontrol!=null) {
+            throw  new IllegalArgumentException(("Proje kodu mevcuttur"));
+        }
+
+        Proje proje = modelMapper.map(projeDto,Proje.class);
+        proje = projeRepository.save(proje);
+
+        projeDto.setId(proje.getId());
+
+        return projeDto;
     }
 
     @Override

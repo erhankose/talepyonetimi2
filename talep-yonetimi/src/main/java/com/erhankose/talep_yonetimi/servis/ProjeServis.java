@@ -9,7 +9,7 @@ import org.springframework.data.domain.Pageable;
 import java.util.Optional;
 
 public interface ProjeServis {
-    Proje save(Proje proje);
+    ProjeDto save(ProjeDto projeDto);
 
     ProjeDto getById(Long id);
 
