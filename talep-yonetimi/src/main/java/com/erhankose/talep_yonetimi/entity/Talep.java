@@ -20,6 +20,7 @@ public class Talep extends BaseEntity {
     @Column(name="description",length = 400)
     private String description;
     @Column(name="date")
+    @Temporal(TemporalType.TIMESTAMP)
     private Date date;
     @Enumerated(EnumType.STRING)
     private TalepStatus talepStatus;

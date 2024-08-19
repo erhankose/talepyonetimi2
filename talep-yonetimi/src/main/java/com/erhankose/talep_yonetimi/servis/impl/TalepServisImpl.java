@@ -1,6 +1,8 @@
 package com.erhankose.talep_yonetimi.servis.impl;
 
+import com.erhankose.talep_yonetimi.dto.ProjeDto;
 import com.erhankose.talep_yonetimi.dto.TalepDto;
+import com.erhankose.talep_yonetimi.entity.Proje;
 import com.erhankose.talep_yonetimi.entity.Talep;
 import com.erhankose.talep_yonetimi.repository.TalepRepository;
 import com.erhankose.talep_yonetimi.servis.TalepServis;
@@ -11,7 +13,6 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.Arrays;
-import java.util.Optional;
 
 @Service
 public class TalepServisImpl implements TalepServis {
@@ -20,39 +21,44 @@ public class TalepServisImpl implements TalepServis {
     //public TalepRepository talepRepository;
 
     public final TalepRepository talepRepository;
-    public final ModelMapper  modelMapper;
+    public final ModelMapper modelMapper;
 
     //Spring setter inject. yerine  constr.inject. best praktis
-    public TalepServisImpl (TalepRepository talepRepository,ModelMapper modelMapper) {
-        this.talepRepository =talepRepository;
+    public TalepServisImpl(TalepRepository talepRepository, ModelMapper modelMapper) {
+        this.talepRepository = talepRepository;
         this.modelMapper = modelMapper;
     }
 
     @Override
     public TalepDto save(TalepDto talepDto) {
 
-        if (talepDto.getDate() ==null) {
-            throw  new IllegalArgumentException("Talep tarihi boş olamaz");
-
+      /*  if (talepDto.getTalep_atanan() == null) {
+            throw new IllegalArgumentException("talep atanan boş olamaz");
         }
+*/
+        Talep talep = modelMapper.map(talepDto, Talep.class);
+        talep = talepRepository.save(talep);
 
-        Talep talepVT = modelMapper.map(talepDto,Talep.class);
+        talepDto.setId(talep.getId());
 
-        talepVT = talepRepository.save(talepVT);
-        return  modelMapper.map(talepVT,TalepDto.class);
+        return talepDto;
     }
+
 
     @Override
-    public Optional<Talep> getById(Long id) {
-        return talepRepository.findById(id);
+    public TalepDto getById(Long id) {
+
+        Talep talep = talepRepository.getById(id);
+        return modelMapper.map(talep, TalepDto.class);
     }
+
 
     @Override
     public TPage<TalepDto> getAllPageble(Pageable pageable) {
 
         Page<Talep> data = talepRepository.findAll(pageable);
 
-        TalepDto[]  talepDtos = modelMapper.map(data.getContent(),TalepDto[].class);
+        TalepDto[] talepDtos = modelMapper.map(data.getContent(), TalepDto[].class);
 
         TPage tPage = new TPage<TalepDto>();
         tPage.setStat(data, Arrays.asList(talepDtos));
@@ -60,8 +66,18 @@ public class TalepServisImpl implements TalepServis {
     }
 
     @Override
-    public Boolean delete(Talep talep) {
-        talepRepository.delete(talep);
+    public TalepDto update(Long id, TalepDto talepDto) {
+
+        Talep talep = modelMapper.map(talepDto, Talep.class);
+        talep = talepRepository.save(talep);
+
+        talepDto = modelMapper.map(talepDto, TalepDto.class);
+        return talepDto;
+    }
+
+    @Override
+    public Boolean delete(Long id) {
+        talepRepository.deleteById(id);
         return Boolean.TRUE;
     }
 

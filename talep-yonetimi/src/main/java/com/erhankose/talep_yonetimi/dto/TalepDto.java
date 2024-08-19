@@ -11,13 +11,9 @@ public class TalepDto {
     private Long id;
 
     private String description;
-
     private Date date;
-
     private TalepStatus talepStatus;
-
     private String detail;
-
     private UserDto talep_atanan;
 
     public Long getId() {

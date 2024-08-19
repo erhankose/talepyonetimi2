@@ -1,17 +1,14 @@
 package com.erhankose.talep_yonetimi.api;
 
 import com.erhankose.talep_yonetimi.dto.ProjeDto;
-import com.erhankose.talep_yonetimi.entity.Proje;
-import com.erhankose.talep_yonetimi.servis.ProjeServis;
 import com.erhankose.talep_yonetimi.servis.impl.ProjeServisImpl;
+import com.erhankose.talep_yonetimi.util.ApiPath;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Optional;
-
 @RestController
-@RequestMapping("/proje")
+@RequestMapping(ApiPath.ProjeKntrol.Kontrol)
 public class ProjeController {
 
     /**
@@ -20,7 +17,6 @@ public class ProjeController {
      * Post
      * Put
      * Delete
-     *
      */
 
     private final ProjeServisImpl projeServisImpl;
@@ -31,23 +27,18 @@ public class ProjeController {
 
 
     @GetMapping("/{id}")
+   // @ApiOperation(value = "getById metodu",response =ProjeDto.class)
     public ResponseEntity<ProjeDto> getById(@PathVariable("id") Long id) {
 
-        ProjeDto projeDto= projeServisImpl.getById(id);
-        ResponseEntity<ProjeDto> projeDtoResponseEntity= ResponseEntity.ok(projeDto);
-        return  projeDtoResponseEntity;
+        ProjeDto projeDto = projeServisImpl.getById(id);
+        ResponseEntity<ProjeDto> projeDtoResponseEntity = ResponseEntity.ok(projeDto);
+        return projeDtoResponseEntity;
     }
 
-    @GetMapping
-    public ResponseEntity<ProjeDto> getById2() {
 
-        ProjeDto projeDto= projeServisImpl.getById(1L);
-        //ResponseEntity<ProjeDto> projeDtoResponseEntity= ResponseEntity.ok(projeDto);
-        return  ResponseEntity.ok(projeDto);
-    }
 
-    //Erhan Köse 7
     @PostMapping()
+    //@ApiOperation(value = "createProje  metodu",response =ProjeDto.class)
     public ResponseEntity<ProjeDto> createProje(@Validated @RequestBody ProjeDto projeDto) {
 
         projeDto = projeServisImpl.save(projeDto);
@@ -55,16 +46,18 @@ public class ProjeController {
         return ResponseEntity.ok(projeDto);
     }
 
-    @PutMapping("/{id}")
-    public ResponseEntity<ProjeDto> update(@PathVariable(value = "id", required= true )  Long id, @Validated @RequestBody ProjeDto projeDto) {
+    @PutMapping("/talep/{id}")
+ //   @ApiOperation(value = "update  metodu",response =ProjeDto.class)
+    public ResponseEntity<ProjeDto> update(@PathVariable(value = "id", required = true) Long id, @Validated @RequestBody ProjeDto projeDto) {
 
-        projeDto = projeServisImpl.update(id,projeDto);
+        projeDto = projeServisImpl.update(id, projeDto);
 
         return ResponseEntity.ok(projeDto);
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<Boolean> delete(@PathVariable(value = "id", required= true )  Long id) {
+   // @ApiOperation(value = "delete  metodu",response =Boolean.class)
+    public ResponseEntity<Boolean> delete(@PathVariable(value = "id", required = true) Long id) {
 
         Boolean deleteDurum = projeServisImpl.delete(id);
 

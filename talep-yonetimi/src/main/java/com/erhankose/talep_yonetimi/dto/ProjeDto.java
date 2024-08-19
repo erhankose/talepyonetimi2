@@ -1,23 +1,20 @@
 package com.erhankose.talep_yonetimi.dto;
 
-import com.erhankose.talep_yonetimi.entity.User;
-import jakarta.persistence.Column;
-import jakarta.persistence.FetchType;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
-import org.antlr.v4.runtime.misc.NotNull;
-import org.hibernate.annotations.NotFound;
+
 import org.modelmapper.internal.bytebuddy.utility.nullability.NeverNull;
 import org.springframework.lang.NonNull;
 
+//@ApiModel(value ="Proje Data Transfer Object")
 public class ProjeDto {
 
     private Long id;
     @NeverNull
     @NonNull
+
     private String pad;
     @NeverNull
     @NonNull
+
     private String pkodu;
 
     public Long getId() {

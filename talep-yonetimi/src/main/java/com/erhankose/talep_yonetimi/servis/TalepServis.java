@@ -1,5 +1,6 @@
 package com.erhankose.talep_yonetimi.servis;
 
+import com.erhankose.talep_yonetimi.dto.ProjeDto;
 import com.erhankose.talep_yonetimi.dto.TalepDto;
 import com.erhankose.talep_yonetimi.entity.Talep;
 import com.erhankose.talep_yonetimi.util.TPage;
@@ -11,9 +12,11 @@ import java.util.Optional;
 public interface TalepServis {
     TalepDto save(TalepDto talepDto);
 
-    Optional<Talep> getById(Long id);
+    TalepDto getById(Long id);
 
     TPage<TalepDto> getAllPageble(Pageable pageable);
 
-    public Boolean delete(Talep talep) ;
+    TalepDto update(Long id, TalepDto talepDto);
+
+    public Boolean delete(Long id) ;
 }
