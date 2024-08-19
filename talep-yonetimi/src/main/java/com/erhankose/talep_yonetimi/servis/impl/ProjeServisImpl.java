@@ -80,5 +80,10 @@ public class ProjeServisImpl implements ProjeServis {
         return projeDto;
     }
 
+    @Override
+    public Boolean delete(Long id) {
+        projeRepository.deleteById(id);
+        return true;
+    }
 
 }

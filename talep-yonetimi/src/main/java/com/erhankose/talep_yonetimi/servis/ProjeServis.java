@@ -16,4 +16,7 @@ public interface ProjeServis {
     Page<Proje> getAllPageble(Pageable pageable);
 
     ProjeDto update(Long id, ProjeDto projeDto);
+
+    Boolean delete(Long id);
 }
+

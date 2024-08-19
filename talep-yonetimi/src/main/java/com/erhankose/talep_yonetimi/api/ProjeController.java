@@ -56,10 +56,18 @@ public class ProjeController {
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<ProjeDto> update(@PathVariable("id") Long id, @Validated @RequestBody ProjeDto projeDto) {
+    public ResponseEntity<ProjeDto> update(@PathVariable(value = "id", required= true )  Long id, @Validated @RequestBody ProjeDto projeDto) {
 
         projeDto = projeServisImpl.update(id,projeDto);
 
         return ResponseEntity.ok(projeDto);
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Boolean> delete(@PathVariable(value = "id", required= true )  Long id) {
+
+        Boolean deleteDurum = projeServisImpl.delete(id);
+
+        return ResponseEntity.ok(deleteDurum);
     }
 }
