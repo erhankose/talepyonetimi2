@@ -5,6 +5,7 @@ import com.erhankose.talep_yonetimi.entity.Proje;
 import com.erhankose.talep_yonetimi.servis.ProjeServis;
 import com.erhankose.talep_yonetimi.servis.impl.ProjeServisImpl;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Optional;
@@ -45,11 +46,19 @@ public class ProjeController {
         return  ResponseEntity.ok(projeDto);
     }
 
-    //Erhan Köse 3
+    //Erhan Köse 7
     @PostMapping()
-    public ResponseEntity<ProjeDto> createProje(@RequestBody ProjeDto projeDto) {
+    public ResponseEntity<ProjeDto> createProje(@Validated @RequestBody ProjeDto projeDto) {
 
         projeDto = projeServisImpl.save(projeDto);
+
+        return ResponseEntity.ok(projeDto);
+    }
+
+    @PutMapping("/{id}")
+    public ResponseEntity<ProjeDto> update(@PathVariable("id") Long id, @Validated @RequestBody ProjeDto projeDto) {
+
+        projeDto = projeServisImpl.update(id,projeDto);
 
         return ResponseEntity.ok(projeDto);
     }

@@ -14,8 +14,10 @@ public class ProjeDto {
 
     private Long id;
     @NeverNull
+    @NonNull
     private String pad;
     @NeverNull
+    @NonNull
     private String pkodu;
 
     public Long getId() {

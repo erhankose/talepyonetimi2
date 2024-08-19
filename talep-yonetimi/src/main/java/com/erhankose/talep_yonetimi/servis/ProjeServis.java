@@ -14,4 +14,6 @@ public interface ProjeServis {
     ProjeDto getById(Long id);
 
     Page<Proje> getAllPageble(Pageable pageable);
+
+    ProjeDto update(Long id, ProjeDto projeDto);
 }
