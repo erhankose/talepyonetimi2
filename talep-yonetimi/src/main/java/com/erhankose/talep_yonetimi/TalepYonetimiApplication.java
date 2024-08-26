@@ -25,14 +25,14 @@ public class TalepYonetimiApplication {
 		return modelMapper;
 	}
 
-
+/*
 	@Bean
 	public Jackson2RepositoryPopulatorFactoryBean repositoryPopulator() {
 		Jackson2RepositoryPopulatorFactoryBean factory = new Jackson2RepositoryPopulatorFactoryBean();
 		factory.setResources(new Resource[]{new ClassPathResource("proje.json")});
 		return factory;
 	}
-
+*/
 
 
 }

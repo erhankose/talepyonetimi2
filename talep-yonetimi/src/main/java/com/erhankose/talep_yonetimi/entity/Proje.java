@@ -24,5 +24,4 @@ public class Proje extends BaseEntity{
     @ManyToOne(optional = true,fetch = FetchType.LAZY)
     private  User yonetici;
 
-
 }

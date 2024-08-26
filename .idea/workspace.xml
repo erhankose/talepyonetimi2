@@ -4,8 +4,43 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17f44002-1642-43e2-89de-1eaeb03d02e8" name="Changes" comment="2- Proje Controller ve Proje servis ile ilgili düzenlemeler. - EK">
-      <changelist_data name="erhankose" email="erhankose@yahoo.com" />
+    <list default="true" id="17f44002-1642-43e2-89de-1eaeb03d02e8" name="Changes" comment="Merge remote-tracking branch 'origin/master'">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/talep-yonetimi/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/talep-yonetimi/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/talep-yonetimi/src/main/java/com/erhankose/talep_yonetimi/TalepYonetimiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/talep-yonetimi/src/main/java/com/erhankose/talep_yonetimi/TalepYonetimiApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/talep-yonetimi/src/main/java/com/erhankose/talep_yonetimi/dto/ProjeDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/talep-yonetimi/src/main/java/com/erhankose/talep_yonetimi/dto/ProjeDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/talep-yonetimi/src/main/java/com/erhankose/talep_yonetimi/dto/TalepDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/talep-yonetimi/src/main/java/com/erhankose/talep_yonetimi/dto/TalepDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/talep-yonetimi/src/main/java/com/erhankose/talep_yonetimi/dto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/talep-yonetimi/src/main/java/com/erhankose/talep_yonetimi/dto/UserDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/talep-yonetimi/src/main/java/com/erhankose/talep_yonetimi/entity/Proje.java" beforeDir="false" afterPath="$PROJECT_DIR$/talep-yonetimi/src/main/java/com/erhankose/talep_yonetimi/entity/Proje.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/talep-yonetimi/src/main/java/com/erhankose/talep_yonetimi/entity/Talep.java" beforeDir="false" afterPath="$PROJECT_DIR$/talep-yonetimi/src/main/java/com/erhankose/talep_yonetimi/entity/Talep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/talep-yonetimi/src/main/java/com/erhankose/talep_yonetimi/entity/TalepHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/talep-yonetimi/src/main/java/com/erhankose/talep_yonetimi/entity/TalepHistory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/talep-yonetimi/src/main/java/com/erhankose/talep_yonetimi/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/talep-yonetimi/src/main/java/com/erhankose/talep_yonetimi/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/talep-yonetimi/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/talep-yonetimi/target/classes/com/erhankose/talep_yonetimi/TalepYonetimiApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/talep-yonetimi/target/classes/com/erhankose/talep_yonetimi/api/ProjeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/talep-yonetimi/target/classes/com/erhankose/talep_yonetimi/dto/ProjeDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/talep-yonetimi/target/classes/com/erhankose/talep_yonetimi/dto/TalepDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/talep-yonetimi/target/classes/com/erhankose/talep_yonetimi/dto/UserDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/talep-yonetimi/target/classes/com/erhankose/talep_yonetimi/entity/BaseEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/talep-yonetimi/target/classes/com/erhankose/talep_yonetimi/entity/Proje.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/talep-yonetimi/target/classes/com/erhankose/talep_yonetimi/entity/Talep.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/talep-yonetimi/target/classes/com/erhankose/talep_yonetimi/entity/TalepHistory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/talep-yonetimi/target/classes/com/erhankose/talep_yonetimi/entity/TalepStatus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/talep-yonetimi/target/classes/com/erhankose/talep_yonetimi/entity/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/talep-yonetimi/target/classes/com/erhankose/talep_yonetimi/repository/ProjeRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/talep-yonetimi/target/classes/com/erhankose/talep_yonetimi/repository/TalepHistoryRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/talep-yonetimi/target/classes/com/erhankose/talep_yonetimi/repository/TalepRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/talep-yonetimi/target/classes/com/erhankose/talep_yonetimi/repository/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/talep-yonetimi/target/classes/com/erhankose/talep_yonetimi/servis/ProjeServis.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/talep-yonetimi/target/classes/com/erhankose/talep_yonetimi/servis/TalepHistoryServis.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/talep-yonetimi/target/classes/com/erhankose/talep_yonetimi/servis/TalepServis.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/talep-yonetimi/target/classes/com/erhankose/talep_yonetimi/servis/UserServis.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/talep-yonetimi/target/classes/com/erhankose/talep_yonetimi/servis/impl/ProjeServisImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/talep-yonetimi/target/classes/com/erhankose/talep_yonetimi/servis/impl/TalepHistoryServisImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/talep-yonetimi/target/classes/com/erhankose/talep_yonetimi/servis/impl/TalepServisImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/talep-yonetimi/target/classes/com/erhankose/talep_yonetimi/servis/impl/UserServisImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/talep-yonetimi/target/classes/com/erhankose/talep_yonetimi/util/TPage.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,20 +69,25 @@
         <option name="title" value="All" />
       </GitPushTagMode>
     </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "erhankose"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;erhankose&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/erhankose/talep-yonetimi.git",
-    "accountId": "d7b6c514-9b69-4137-afd7-511d055a95e4"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/erhankose/talepyonetimi2.git&quot;,
+    &quot;accountId&quot;: &quot;d7b6c514-9b69-4137-afd7-511d055a95e4&quot;
   }
-}]]></component>
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
   </component>
@@ -63,17 +103,26 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.TalepYonetimiApplication.executor": "Debug",
+    "Maven.talep-yonetimi [clean].executor": "Run",
+    "Maven.talep-yonetimi [compile].executor": "Run",
+    "Maven.talep-yonetimi [install].executor": "Run",
+    "Maven.talep-yonetimi [package].executor": "Run",
+    "Maven.talep-yonetimi [test].executor": "Run",
+    "Maven.talep-yonetimi [validate].executor": "Run",
+    "Maven.talep-yonetimi [verify].executor": "Run",
     "Notification.DisplayName-DoNotAsk-Vcs Important Messages": "VCS important messages",
     "Notification.DoNotAsk-Vcs Important Messages": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/!!MyKods/talep-yonetimi",
+    "last_opened_file_path": "E:/!!MyKods/issue-management-master",
     "settings.editor.selected.configurable": "vcs.Git"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.erhankose.talep_yonetimi.api" />
       <recent name="com.erhankose.talep_yonetimi.servis.impl" />
       <recent name="com.erhankose.talep_yonetimi.servis" />
       <recent name="com.erhankose.talep_yonetimi.repo" />
@@ -287,7 +336,111 @@
       <option name="project" value="LOCAL" />
       <updated>1724012811746</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="test1">
+      <option name="closed" value="true" />
+      <created>1724016536593</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1724016536593</updated>
+    </task>
+    <task id="LOCAL-00024" summary="test1">
+      <option name="closed" value="true" />
+      <created>1724016566049</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1724016566049</updated>
+    </task>
+    <task id="LOCAL-00025" summary="test3">
+      <option name="closed" value="true" />
+      <created>1724016785917</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1724016785917</updated>
+    </task>
+    <task id="LOCAL-00026" summary="test3">
+      <option name="closed" value="true" />
+      <created>1724016843252</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1724016843252</updated>
+    </task>
+    <task id="LOCAL-00027" summary="test3">
+      <option name="closed" value="true" />
+      <created>1724016860293</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1724016860293</updated>
+    </task>
+    <task id="LOCAL-00028" summary="test6">
+      <option name="closed" value="true" />
+      <created>1724071594639</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1724071594639</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Talep yönetimi Controller">
+      <option name="closed" value="true" />
+      <created>1724081467502</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1724081467502</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Talep yönetimi Controller">
+      <option name="closed" value="true" />
+      <created>1724081480144</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1724081480144</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Talep yönetimi Controller">
+      <option name="closed" value="true" />
+      <created>1724081583361</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1724081583361</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Talep yönetimi Controller">
+      <option name="closed" value="true" />
+      <created>1724094000745</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1724094000745</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Talep yönetimi Controller">
+      <option name="closed" value="true" />
+      <created>1724094037607</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1724094037607</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Merge remote-tracking branch 'origin/master'">
+      <option name="closed" value="true" />
+      <created>1724598619750</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1724598619750</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Merge remote-tracking branch 'origin/master'">
+      <option name="closed" value="true" />
+      <created>1724598630032</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1724598630032</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -325,75 +478,72 @@
     <MESSAGE value="EK" />
     <MESSAGE value="Proje Controller ve Proje servis ile ilgili düzenlemeler. - EK" />
     <MESSAGE value="2- Proje Controller ve Proje servis ile ilgili düzenlemeler. - EK" />
-    <option name="LAST_COMMIT_MESSAGE" value="2- Proje Controller ve Proje servis ile ilgili düzenlemeler. - EK" />
+    <MESSAGE value="test1" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;talep-yonetimi/src/main/java/com/erhankose/talep_yonetimi/api/ProjeController.java" />
+    <MESSAGE value="test3" />
+    <MESSAGE value="Merge branch 'master' of https://github.com/erhankose/talepyonetimi2&#10;&#10;# Conflicts:&#10;#&#9;talep-yonetimi/src/main/java/com/erhankose/talep_yonetimi/api/ProjeController.java" />
+    <MESSAGE value="test6" />
+    <MESSAGE value="Talep yönetimi Controller" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/master'" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/master'" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/talep-yonetimi/src/main/java/com/erhankose/talep_yonetimi/servis/impl/ProjeServisImpl.java</url>
-          <line>50</line>
+          <line>47</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/talep-yonetimi/src/main/java/com/erhankose/talep_yonetimi/api/ProjeController.java</url>
-          <line>34</line>
+          <line>32</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/talep-yonetimi/src/main/java/com/erhankose/talep_yonetimi/servis/impl/ProjeServisImpl.java</url>
-          <line>51</line>
+          <line>48</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/talep-yonetimi/src/main/java/com/erhankose/talep_yonetimi/servis/impl/ProjeServisImpl.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/talep-yonetimi/src/main/java/com/erhankose/talep_yonetimi/api/ProjeController.java</url>
-          <line>51</line>
-          <option name="timeStamp" value="6" />
+          <line>61</line>
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/talep-yonetimi/src/main/java/com/erhankose/talep_yonetimi/api/ProjeController.java</url>
-          <line>53</line>
-          <option name="timeStamp" value="7" />
+          <line>63</line>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/talep-yonetimi/src/main/java/com/erhankose/talep_yonetimi/servis/impl/ProjeServisImpl.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="8" />
+          <url>file://$PROJECT_DIR$/talep-yonetimi/src/main/java/com/erhankose/talep_yonetimi/api/TalepController.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/talep-yonetimi/src/main/java/com/erhankose/talep_yonetimi/servis/impl/ProjeServisImpl.java</url>
-          <line>34</line>
-          <option name="timeStamp" value="9" />
+          <url>file://$PROJECT_DIR$/talep-yonetimi/src/main/java/com/erhankose/talep_yonetimi/api/TalepController.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/talep-yonetimi/src/main/java/com/erhankose/talep_yonetimi/servis/impl/ProjeServisImpl.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="10" />
+          <url>file://$PROJECT_DIR$/talep-yonetimi/src/main/java/com/erhankose/talep_yonetimi/servis/impl/TalepServisImpl.java</url>
+          <line>79</line>
+          <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/talep-yonetimi/src/main/java/com/erhankose/talep_yonetimi/servis/impl/ProjeServisImpl.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="11" />
+          <url>file://$PROJECT_DIR$/talep-yonetimi/src/main/java/com/erhankose/talep_yonetimi/servis/impl/TalepServisImpl.java</url>
+          <line>80</line>
+          <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/talep-yonetimi/src/main/java/com/erhankose/talep_yonetimi/servis/impl/ProjeServisImpl.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/talep-yonetimi/src/main/java/com/erhankose/talep_yonetimi/servis/impl/ProjeServisImpl.java</url>
-          <line>40</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/talep-yonetimi/src/main/java/com/erhankose/talep_yonetimi/servis/impl/ProjeServisImpl.java</url>
-          <line>41</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/talep-yonetimi/src/main/java/com/erhankose/talep_yonetimi/servis/impl/ProjeServisImpl.java</url>
-          <line>43</line>
-          <option name="timeStamp" value="15" />
+          <url>file://$PROJECT_DIR$/talep-yonetimi/src/main/java/com/erhankose/talep_yonetimi/api/ProjeController.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="30" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
